@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ish_topdim/features/onboarding/presentation/pages/onbarding_v2.dart';
+import 'package:ish_topdim/features/onboarding/presentation/pages/onboarding_v2.dart';
 
 class OnboardingView extends StatefulWidget {
   const OnboardingView({super.key});
@@ -25,7 +25,7 @@ class _OnboardingViewState extends State<OnboardingView>
     _controller.forward().whenComplete(() {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (_) => const OnbardingV2()),
+        MaterialPageRoute(builder: (_) => const OnboardingScreen()),
       );
     });
   }
